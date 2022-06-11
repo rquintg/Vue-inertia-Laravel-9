@@ -18,27 +18,27 @@
                     <label for="content" class="block font-medium text-sm text-gray-700">
                         Creditos
                     </label>
-                    <input v-model="form.content" type="text" id="content" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <input v-model="form.content" autocomplete="off" type="text" id="content" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     <div v-if="errors.content" class="text-red-600">
                         {{ errors.content }}
                     </div>
                 </div>
 
                 <div>
-                    <label for="title" class="block font-medium text-sm text-gray-700">
+                    <label for="prof" class="block font-medium text-sm text-gray-700">
                         Profesor
                     </label>
-                    <input v-model="form.prof" type="text" id="prof" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <input v-model="form.prof" autocomplete="off" type="text" id="prof" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     <div v-if="errors.prof" class="text-red-600">
                         {{ errors.prof }}
                     </div>
                 </div>
 
                 <div>
-                    <label for="title" class="block font-medium text-sm text-gray-700">
+                    <label for="prof" class="block font-medium text-sm text-gray-700">
                         Asignatura Pre-requisito
                     </label>
-                    <input v-model="form.prereq" type="text" id="prereq" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <input v-model="form.prereq" autocomplete="off" type="text" id="prereq" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     <div v-if="errors.prereq" class="text-red-600">
                         {{ errors.prereq }}
                     </div>
@@ -47,20 +47,20 @@
 
                 <div class="font-mono">
                     <div>
-                    <label for="title" class="block font-medium text-sm text-gray-700">
+                    <label for="horasautonomo" class="block font-medium text-sm text-gray-700">
                         Horas de trabajo autonomo
                     </label>
-                    <input v-model="form.horasautonomo" type="text" id="horasautonomo" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <input v-model="form.horasautonomo" autocomplete="off" type="text" id="horasautonomo" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     <div v-if="errors.horasautonomo" class="text-red-600">
                         {{ errors.horasautonomo }}
                     </div>
                 </div>
 
                 <div>
-                    <label for="title" class="block font-medium text-sm text-gray-700">
+                    <label for="horasdirigido" class="block font-medium text-sm text-gray-700">
                         Horas de trabajo dirigido
                     </label>
-                    <input v-model="form.horasdirigido" type="text" id="horasdirigido" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                    <input v-model="form.horasdirigido" autocomplete="off" type="text" id="horasdirigido" class="block mt-1 w-80 rounded-md shadow-sm border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                     <div v-if="errors.horasdirigido" class="text-red-600">
                         {{ errors.horasdirigido }}
                     </div>
